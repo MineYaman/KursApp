@@ -1,0 +1,14 @@
+{
+    "dersler":[
+        {"DersId":1,"DersAdi":"Fizik","Ucret":100,"Icerik":"Kuantum","ImageUrl":"https://www.maraspusula.com/images/haberler/2018/02/uzmanlarin_onerileri_ile_verimli_ders_calisma_yontemi_h35528_930c3.jpg","KursId":1,"OgretmenId":1,"OgretmenAdi":"Mansur","KategoriId":1,"KategoriAdi":"Sayısal"},
+        {"DersId":2,"DersAdi":"Biyoloji","Ucret":50,"Icerik":"Canlılar","ImageUrl":"https://www.tech-worm.com/wp-content/uploads/2017/11/biyoloji.jpg","KursId":1,"OgretmenId":2,"OgretmenAdi":"Ali","KategoriId":1,"KategoriAdi":"Sayisal"},
+        {"DersId":3,"DersAdi":"Edebiyat","Ucret":50,"Icerik":"Turk Edebiyati","ImageUrl":"https://3.bp.blogspot.com/-zIKcaOYQVQU/ViLtApxdCHI/AAAAAAAAbkg/oa63YVduGaA/s1600/edebiyat.jpg","KursId":1,"OgretmenId":3,"OgretmenAdi":"Ayşe","KategoriId":2,"KategoriAdi":"Sözel"},
+        {"DersId":4,"DersAdi":"Tarih","Ucret":80,"Icerik":"Osmanlı Tarihi","ImageUrl":"https://www.ttk.gov.tr/wp-content/uploads/2016/11/pirireis-306x225.jpg","KursId":1,"OgretmenId":4,"OgretmenAdi":"Fatma","KategoriId":2,"KategoriAdi":"Sözel"},
+        {"DersId":5,"DersAdi":"Coğrafya","Ucret":30,"Icerik":"Kayaçlar","ImageUrl":"https://pbs.twimg.com/profile_images/941319747408363521/koHplc7x.jpg","KursId":1,"OgretmenId":5,"OgretmenAdi":"Veli","KategoriId":2,"KategoriAdi":"Sözel"},
+        {"DersId":6,"DersAdi":"Geometri","Ucret":90,"Icerik":"Üçgenler","ImageUrl":"https://www.vrders.com/wp-content/uploads/2019/04/GEOMETR%C4%B0-RES%C4%B0M-%C5%9EABLON.png","KursId":1,"OgretmenId":6,"OgretmenAdi":"Mehmet","KategoriId":1,"KategoriAdi":"Sayısal"}
+    ],
+    "kategoriler":[
+        {"KategoriId":1, "KategoriAdi":"Sayısal"},
+        {"KategoriId":2, "KategoriAdi":"Sözel"}
+    ]
+}

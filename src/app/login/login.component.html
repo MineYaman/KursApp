@@ -1,0 +1,19 @@
+<form #loginForm="ngForm" (ngSubmit)="login(loginForm)" class="form-signin">
+    <div class="text-center mb-4">
+        <h1 class="h3 mb-3 font-weight-normal">Giriş</h1>
+    </div>
+    <div class="form-label-group">
+        <label for="inputKullaniciAdi">Kullanıcı Adı</label>
+        <input type="text" #userName="ngModel" [(ngModel)]="model.KullaniciAdi" id="KullaniciAdi" name="KullaniciAdi"
+        class="form-control" placeholder="Kullanıcı Adı" required autofocus>
+    </div>
+    <div class="form-label-group">
+        <label for="inputPassword">Password</label>
+        <input type="password" #password="ngModel" [(ngModel)]="model.Password" id="Password" name="Password"
+        class="form-control" placeholder="Şifre" required>
+    </div>
+    <div class="checkbox mb-3">
+    </div>
+    <button (click)= "girisYapin()" class="btn btn-lg btn-primary btn-block" type="submit">Giriş Yap</button>
+    <p class="mt-5 mb-3 text-muted text-center">&copy; 2019</p>
+</form>

@@ -1,0 +1,9 @@
+<h3>{{title}}</h3>
+<div class="list-group">
+  <a class="list-group-item" routerLink="dersler">Tüm Dersler</a>
+</div>
+<div class="list-group" *ngFor="let Kategori of kategoriler">
+  <a class="list-group-item" routerLink="dersler/kategori/{{Kategori.KategoriId}}">{{Kategori.KategoriAdi}}</a>
+    <!-- <a href="#" class="list-group-item list-group-item-action active">{{Kategori.KategoriAdi}}</a> -->
+    <!-- <a href="#" class="list-group-item list-group-item-action disabled" tabindex="-1" aria-disabled="true">Vestibulum at eros</a> -->
+  </div>

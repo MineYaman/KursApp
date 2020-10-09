@@ -1,0 +1,21 @@
+<h3>Yeni Ders Ekle</h3>
+<form [formGroup]="dersAddForm" (ngSubmit)="add()">
+    <div class="form-group">
+        <input type="text" id="DersAdi" name="DersAdi" class="form-control" placeholder="Ders Adi">
+        <div class="alert alert-danger"
+        *ngIf="dersAddForm.get('DersAdi').hasError('required') && dersAddForm.get('DersAdi').dirty">
+        Ders Adı Zorunludur!
+        </div>
+    </div>
+    <div class="form-group">
+        <select class="form-control" formControlName="KategoriId" name="KategoriId" >
+            <option *ngFor="let Kategori of kategoriler" [value]="Kategori.KategoriId">{{Kategori.KategoriAdi}}</option>
+          </select>
+          <div class="alert alert-danger"
+            *ngIf="dersAddForm.get('KategoriId').hasError('required') 
+            && dersAddForm.get('KategoriId').touched" >Kategori Zorunludur!
+          </div>
+    </div>
+</form>
+
+<button type="submit" class="btn btn-primary" [disabled]="dersAddForm.invalid">Ders Ekle</button>

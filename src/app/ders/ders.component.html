@@ -1,0 +1,27 @@
+<div class="form-group">
+  <input class="form-control"
+  id="dersAdi"
+  placeholder="Ders Ara"
+  [(ngModel)]="filterText"/>
+  <small *ngIf="filterText" class="form-text text-muted">
+    Şu an <strong>{{filterText}}</strong> aradınız
+  </small>
+</div>
+<h3 *ngIf="dersler; else: noDers">{{title}}</h3>
+<ng-template #noDers>
+  <div class="alert alert-primary" role="alert">
+    Burada Ders yok!
+  </div>
+</ng-template>
+<div *ngFor="let Ders of dersler" class="card" style="width: 18rem;">
+  <img [src]="Ders.ImageUrl" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">{{Ders.DersAdi | uppercase}}</h5>
+    <p class="card-text">{{Ders.Ucret | currency : 'TL '}}</p>
+    <p class="card-text">{{Ders.Icerik}}</p>
+    <p class="card-text">{{Ders.OgretmenAdi}}</p>
+    <p class="card-text">{{Ders.KategoriAdi}}</p>
+    
+    <a (click)="addToChart(Ders)" class="btn btn-primary">Satın Al</a>
+  </div>
+</div>
